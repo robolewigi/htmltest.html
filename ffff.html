@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Draw a rectangular shape</title>
+</head>
+<canvas id="canvas" width="150" height="150"></canvas>
+</html>
+
+<script>
+  
+  var size=25, sizeX=6, sizeY=6;
+  function draw( x,y,w,h){
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var context = canvas.getContext('2d');
+    
+    context.fillRect(x,y,w,h);
+  }
+}
+  for(let x=0; x<sizeX; x++ ){
+    for(let y=0; y<sizeY; y++){
+     draw(x*(size+1),y*(size+1),size,size);
+    }
+  }
+
+  
+  // for(let y=0; y<sizeY; y++ ){
+ //    draw(y*(size+1),48,size,size);
+ // }
+
+</script>
+
+<!-- 
+~~hello~~
+8^y
+how HIGH do you have be
+to just DO something like that
+8^y-->
